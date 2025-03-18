@@ -1,0 +1,266 @@
+/* 🔹 Reset y configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 🔹 Estilo global */
+body {
+    background-color: #f0f4f7;
+    color: #333;
+}
+
+/* 🔹 Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* 🔹 Encabezado fijo con efecto flotante */
+header {
+    background-color: #333;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+/* 🔹 Estilos de navegación */
+nav {
+    margin-top: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 10px 15px;
+}
+
+/* 🔹 Botones del menú */
+.nav-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.nav-btn:hover {
+    background-color: #008CBA;
+    transform: scale(1.1);
+}
+
+/* 🔹 Contenedor principal de las páginas */
+.page {
+    display: none;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* 🔹 Títulos */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #008CBA;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Texto */
+p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* 🔹 Resaltar palabras clave */
+strong {
+    color: #008CBA;
+    font-weight: bold;
+}
+
+/* 🔹 Animación de aparición */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* 🔹 Sección de Servicios */
+#services {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* 🔹 Estilo de cada servicio */
+.service-container {
+    background: #ffffff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* 🔹 Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* 🔹 Diseño Responsivo */
+@media (max-width: 768px) {
+    .nav-btn {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .page h1 {
+        font-size: 2rem;
+    }
+
+    .page p {
+        font-size: 1rem;
+    }
+}
+/* 🔹 Sección de contacto */
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* 🔹 Contenedor de contacto */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Formulario de contacto */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #008CBA;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* 🔹 Efecto al enfocar los campos */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #008CBA;
+    box-shadow: 0 0 5px rgba(0, 140, 186, 0.5);
+    outline: none;
+}
+
+/* 🔹 Botón de enviar */
+.btn-send {
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 1.2rem;
+    color: white;
+    background: #008CBA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-send:hover {
+    background: #005f87;
+    transform: scale(1.05);
+}
+
+/* 🔹 Información de contacto */
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.contact-info h2 {
+    color: #008CBA;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* 🔹 Diseño Responsivo */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+.page {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.page.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}

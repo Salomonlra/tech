@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Dinámica Mejorada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showPage('home')" class="nav-btn">Inicio</a></li>
+                    <li><a href="#" onclick="showPage('services')" class="nav-btn">Servicios</a></li>
+                    <li><a href="#" onclick="showPage('contact')" class="nav-btn">Contacto</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="home" class="page">
+                <div class="info-container">
+                    <h1>Informática a nuestros clientes</h1>
+                    <p>
+                        Nuestro propósito es ofrecer un servicio de calidad a particulares, empresas y dependencias de gobierno. 
+                        Contamos con un equipo de ingenieros y técnicos especializados en soluciones informáticas, 
+                        porque para nosotros es muy importante brindar respuestas eficientes a nuestros clientes con 
+                        un servicio de alta calidad para el beneficio de su empresa o negocio.
+                    </p>
+                    <img src="imgtecnologia-home.jpg" alt="Soluciones Tecnológicas" class="banner-img">
+                </div>
+            
+                <div class="mission-container">
+                    <h2>Nuestra Misión</h2>
+                    <p>
+                        Nuestra misión es hacerte la vida más fácil y simple, brindándote soluciones tecnológicas. 
+                        Actualmente, la tecnología se ha vuelto central y primordial en nuestro día a día, 
+                        por lo que queremos ofrecerte respuestas rápidas y efectivas.
+                    </p>
+                </div>
+            
+                <div class="objective-container">
+                    <h2>Nuestro Objetivo</h2>
+                    <p>
+                        Nuestro objetivo es brindarte soluciones integrales para el crecimiento de empresas o negocios. 
+                        En <strong>IT TECH</strong>, no solo ofrecemos un servicio, sino que buscamos 
+                        la satisfacción total de nuestros clientes.
+                    </p>
+                </div>
+            </div>
+            </div>
+
+            <div id="services" class="page">
+                <h1>Servicios</h1>
+                
+                <div class="service-container">
+                    <h2>🛠️ Soporte Técnico</h2>
+                    <p>
+                        Instalación de Windows y programas, recuperación de datos y fotos, 
+                        eliminación de virus y spyware, formateo de disco duro, reseteo de clave de Windows y soporte remoto online.
+                    </p>
+                </div>
+            
+                <div class="service-container">
+                    <h2>🖥️ Mantenimiento de PC y Servidores</h2>
+                    <p>
+                        Actualización de sistemas operativos, instalación de antivirus, mantenimiento preventivo de hardware, 
+                        desfragmentación del disco duro y limpieza interna del CPU.
+                    </p>
+                </div>
+            
+                <div class="service-container">
+                    <h2>🖥️💻 Armado de PC</h2>
+                    <p>
+                        Armamos computadoras para uso escolar, oficina o gaming, trabajando con las mejores marcas del mercado 
+                        y garantía en el hardware. <strong>¡Contáctanos para más información!</strong>
+                    </p>
+                </div>
+            
+                <div class="service-container">
+                    <h2>🔄 Actualización de Equipos</h2>
+                    <p>
+                        Actualizamos software o hardware en equipos obsoletos. Diagnosticamos si tu computadora cumple con los requisitos 
+                        para la instalación de un nuevo sistema.
+                    </p>
+                </div>
+            
+                <div class="service-container">
+                    <h2>🌐 Creación y Redistribución de Redes</h2>
+                    <p>
+                        Configuramos y extendemos tu red LAN o WIFI. Reparamos cables UTP y conectores RJ45, 
+                        y ampliamos tu señal WIFI a otros sitios para una mejor cobertura.
+                    </p>
+                </div>
+
+                <div class="service-container">
+                    <h2>💻 Diseño grafico y manejo de redes</h2>
+                    <p>
+                        Los servicios que tu empresa necesita para generar más
+                        ventas ahora se encuentran en <strong>IT TECH</strong>. Desarrollo
+                        y diseño de Paginas web, publicidad e imgen corporativa
+                    </p>
+                </div>
+
+                <div class="service-container">
+                    <h2>💻 Instalacion y mantenimiento a CCTV</h2>
+                    <p>
+                        El servicio y equipo más eficaz para la protección y control de acceso en tus 
+                        oficinas u hogar. Tecnología consolidada y sistemas electrónicos de seguridad a tu servicio.
+                        te asesoramos de la mano en la implementación de sistemas CCTV
+                    </p>
+                </div>
+            </div>
+ 
+
+            <div id="contact" class="page">
+                <h1>Contacto</h1>
+                <p>Ponte en contacto con nosotros para más información o cotizaciones.</p>
+            
+                <div class="contact-container">
+                    <form action="#" method="POST" class="contact-form">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+            
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            
+                        <button type="submit" class="btn-send">Enviar Mensaje</button>
+                    </form>
+            
+                    <div class="contact-info">
+                        <h2>Información de Contacto</h2>
+                        <p><strong>📍 Dirección:</strong> Calle Tecnológica #123, Ciudad Digital</p>
+                        <p><strong>📞 Teléfono:</strong> +52 123 456 7890</p>
+                        <p><strong>✉️ Email:</strong> contacto@tuempresa.com</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 ECOClean. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
