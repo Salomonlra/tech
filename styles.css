@@ -74,6 +74,16 @@ header nav ul li {
     text-align: center;
 }
 
+/* 🔹 Estilo para la imagen en la página de inicio */
+.banner-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
 /* 🔹 Títulos */
 h1 {
     font-size: 2.5rem;
@@ -149,6 +159,7 @@ footer {
         font-size: 1rem;
     }
 }
+
 /* 🔹 Sección de contacto */
 #contact {
     text-align: center;
@@ -251,16 +262,4 @@ footer {
         margin-right: 0;
         margin-bottom: 20px;
     }
-}
-.page {
-    display: none;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.page.active {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
 }
