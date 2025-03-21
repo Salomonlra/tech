@@ -91,7 +91,10 @@ header nav ul li {
     border-radius: 10px;
     display: block;
     margin: 20px auto;
+<<<<<<< Updated upstream
     object-fit: cover;
+=======
+>>>>>>> Stashed changes
 }
 
 /* 🔹 Títulos */
@@ -198,4 +201,8 @@ footer {
         margin-right: 0;
         margin-bottom: 20px;
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
